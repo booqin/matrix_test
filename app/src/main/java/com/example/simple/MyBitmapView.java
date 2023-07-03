@@ -87,28 +87,32 @@ public class MyBitmapView extends View {
 
     }
 
-    public void setTranslate(){
+    public Matrix setTranslate(){
         matrix.reset();
         matrix.postTranslate(BitmapWidth/4, BitmapHeight/4);
         Log.d("BQ", matrix.toShortString());
         invalidate();
+        return matrix;
     }
-    public void setRotate(){
+    public Matrix setRotate(){
         matrix.reset();
         matrix.postRotate(10);
         Log.d("BQ", matrix.toShortString());
         invalidate();
+        return matrix;
     }
-    public void setScale(){
+    public Matrix setScale(){
         matrix.reset();
         matrix.postScale(0.8f, 0.8f) ;
         Log.d("BQ", matrix.toShortString());
         invalidate();
+        return matrix;
     }
-    public void setSkew(){
+    public Matrix setSkew(){
         matrix.reset();
         matrix.preSkew(0, 1);
         Log.d("BQ", matrix.toShortString());
         invalidate();
+        return matrix;
     }
 }
