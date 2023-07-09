@@ -30,6 +30,10 @@ class ColorActivity: AppCompatActivity() {
             mArray[12] = 0f
             mArray[18] = 1f
             //4x5矩阵
+            //[ 1, 0, 0, 0, 0
+            //  0, 0, 0, 0, 0
+            //  0, 0, 0, 0, 0
+            //  0, 0, 0, 1, 0 ]
             val cm = ColorMatrix(mArray)
 //            cm.setSaturation(0f)
 
@@ -44,6 +48,10 @@ class ColorActivity: AppCompatActivity() {
             mArray[12] = 0f
             mArray[18] = 1f
             //4x5矩阵
+            //[ 0, 0, 0, 0, 0
+            //  0, 1, 0, 0, 0
+            //  0, 0, 0, 0, 0
+            //  0, 0, 0, 1, 0 ]
             val cm = ColorMatrix(mArray)
 //            cm.setSaturation(0f)
 
@@ -58,6 +66,10 @@ class ColorActivity: AppCompatActivity() {
             mArray[12] = 1f
             mArray[18] = 1f
             //4x5矩阵
+            //[ 0, 0, 0, 0, 0
+            //  0, 0, 0, 0, 0
+            //  0, 0, 1, 0, 0
+            //  0, 0, 0, 1, 0 ]
             val cm = ColorMatrix(mArray)
 //            cm.setSaturation(0f)
 
